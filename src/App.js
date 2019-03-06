@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
-					<p>
-						Edit <code>src/App.js</code> and save to reload.
-					</p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Learn React
-					</a>
-				</header>
-			</div>
-		);
-	}
+function Welcome(property) { return (
+	<p>Hello {property.name}</p>
+);}
+
+function App() {
+	const hello = (
+		<div>
+			<img src={logo} width={128}/>
+			<Welcome name="asd" />
+			<Welcome name="dsa" />
+			<Welcome name="fas" />
+		</div>
+	);
+	const time = (
+		<div>
+			<h1>{new Date().toLocaleTimeString()}</h1>
+		</div>
+	);
+
+	return hello;
 }
 
 export default App;
