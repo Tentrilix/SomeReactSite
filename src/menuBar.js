@@ -12,8 +12,8 @@ function svgTriangle() {
 				</defs>
 				<a href=".././public/index.html">
 					<path d="M0 0 L0 100 L200 0 Z" strokeWidth="0" fill="red"/>
+					<text x="25" y="35" fontSize="20">MySite</text>
 				</a>
-				<text x="25" y="35" fontSize="20">MySite</text>
 			</svg>
 		</div>
 	);
