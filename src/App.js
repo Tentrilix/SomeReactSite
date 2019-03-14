@@ -6,15 +6,17 @@ function Welcome(property) { return (
 	<p>Hello {property.name}</p>
 );}
 
-function App() {
-	return (
-		<div>
-			<img src={logo} width={128} alt="pic"/>
-			<Welcome name="asd"/>
-			<Welcome name="dsa"/>
-			<Welcome name="fas"/>
-		</div>
-	);
+class App extends React.Component {
+	render() {
+		return (
+			<div>
+				<img src={logo} width={128} alt="pic"/>
+				<Welcome name="asd"/>
+				<Welcome name="dsa"/>
+				<Welcome name="fas"/>
+			</div>
+		);
+	}
 }
 
 export default App;

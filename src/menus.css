@@ -1,0 +1,14 @@
+/* menuBar */
+
+#menubar {
+	height: 250px;
+	position: relative;
+	background-color: #ff3622;
+}
+
+#triangle {
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	filter: url(#shadow);
+}
