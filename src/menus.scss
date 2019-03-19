@@ -1,0 +1,71 @@
+/* menuBar */
+
+#menubar {;
+	background-color: #ff3622;
+	height: 250px;
+	position: relative
+}
+
+#triangle {
+	filter: url(#shadow);
+	left: -5px;
+	position: absolute;
+	top: -5px;
+}
+
+#btnrow {
+	bottom: 0;
+	display: flex;
+	position: absolute;
+	transform: translate(50%, 0px);
+}
+
+.menuBtn {
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 0 solid #923425;
+	color: #000000;
+	display: block;
+	font-size: 1.5em;
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	vertical-align: middle;
+	width: 200px;
+	z-index: 1;
+
+	&:before {
+		transition: 0.5s all ease;
+		position: absolute;
+		height: 4px;
+		right: 100%;
+		left: 0;
+		bottom: 0;
+		opacity: 0.5;
+		content: "";
+		background-color: #923425;
+		z-index: -1;
+	}
+
+	&:hover {
+		transition: 0.5s all ease;
+		background-color: rgba(0, 0, 0, 0.1);
+
+		&:before {
+			right: 0;
+			opacity: 1;
+		}
+	}
+
+	&:focus {
+		transition: 0.5s all ease;
+		background-color: rgba(0, 0, 0, 0.1);
+
+		&:before {
+			right: 0;
+			opacity: 1;
+		}
+	}
+}
